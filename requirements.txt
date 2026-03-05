@@ -1,0 +1,59 @@
+# FastAPI framework
+fastapi>=0.104.0
+
+# Logging, JSON streaming, HTTP requests
+requests>=2.31.0
+
+# Data handling
+pandas>=2.1.0
+numpy>=1.26.0
+
+# Deep learning / embeddings
+torch>=2.1.0
+sentence-transformers>=2.2.2
+transformers>=4.40.0
+datasets>=2.15.1
+
+# FAISS (CPU version, nếu muốn GPU thay cpu -> faiss-gpu)
+faiss-cpu>=1.7.4
+
+# Data validation / schema
+pydantic>=2.5.0
+
+# Optional: Ollama client (nếu dùng Ollama API)
+ollama>=0.0.19
+
+# Optional: For dotenv support
+python-dotenv>=1.0.0
+
+pydantic-settings>=1.0
+
+
+# requirements.txt
+
+fastapi>=0.115.0
+uvicorn[standard]>=0.30.0
+motor>=3.5.1
+beanie>=1.26.0
+pydantic>=2.9.0
+pydantic-settings>=2.5.0
+
+# Ollama & LLM
+ollama>=0.3.0
+
+# Recognition (CLIP, PIL, torch)
+transformers>=4.44.0
+sentence-transformers>=3.0.0
+torch>=2.4.0
+torchvision>=0.19.0
+torchaudio>=2.4.0
+pillow>=10.0.0
+
+# MongoDB async & logging
+pymongo>=4.8.0
+python-dotenv>=1.0.0
+
+# Optional (nếu dùng JWT, upload file, rate limit)
+python-multipart>=0.0.9
+python-jose[cryptography]>=3.3.0
+passlib[bcrypt]>=1.7.4
