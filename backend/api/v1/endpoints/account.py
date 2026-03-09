@@ -3,7 +3,7 @@ from fastapi import APIRouter, Body
 from backend.schemas.account import AccountActionRequest, AccountActionResponse
 from backend.services.account_service import execute_account_action
 
-router = APIRouter(prefix="/accounts", tags=["Account"])
+router = APIRouter(tags=["Account"])
 
 @router.post("/action", response_model=AccountActionResponse)
 async def account_action(request: AccountActionRequest = Body(...)):

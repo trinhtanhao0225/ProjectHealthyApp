@@ -12,7 +12,7 @@ api_router = APIRouter()
 api_router.include_router(auth.router, prefix="/auth", tags=["Auth"])
 
 # Nếu có thêm endpoint khác, include ở đây
-# api_router.include_router(recognition.router, prefix="/recognition", tags=["Recognition"])
+api_router.include_router(recognition.router, prefix="/recognition", tags=["Recognition"])
 # api_router.include_router(exercise.router, prefix="/exercise", tags=["Exercise"])
 # api_router.include_router(food.router, prefix="/food", tags=["Food"])
 # api_router.include_router(user.router, prefix="/users", tags=["User"])

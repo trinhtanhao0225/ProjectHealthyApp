@@ -5,7 +5,7 @@ from typing import List, Optional
 from backend.schemas.food import FoodCreate, FoodResponse
 from backend.services.food_service import save_food, get_all_foods, get_food_by_date
 
-router = APIRouter(prefix="/food", tags=["Food"])
+router = APIRouter(tags=["Food"])
 
 @router.post("/", response_model=FoodResponse, status_code=201)
 async def create_food(data: FoodCreate):

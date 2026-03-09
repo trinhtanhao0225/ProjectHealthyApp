@@ -3,7 +3,7 @@ from fastapi import APIRouter, HTTPException, status
 from backend.schemas.user import UserCreate, UserResponse
 from backend.services.user_service import create_user, get_all_users, get_user_by_email
 
-router = APIRouter(prefix="/users", tags=["User"])
+router = APIRouter(tags=["User"])
 
 @router.post("/", response_model=UserResponse, status_code=status.HTTP_201_CREATED)
 async def create_user_endpoint(data: UserCreate):
